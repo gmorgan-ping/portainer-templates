@@ -1,7 +1,7 @@
 [
     {
     "type": 3,
-    "title": "[TESTING] PingFederate HTTP BIN Sample App",
+    "title": "[DEMO] PingFederate HTTP BIN Sample App",
     "description": "Login to PingFederate on port 9999",
     "logo": "https://raw.githubusercontent.com/gmorgan-ping/portainer-templates/master/ping-logo.svg",
     "categories": [
