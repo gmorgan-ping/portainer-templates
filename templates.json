@@ -10,8 +10,8 @@
     "note": "<b>test</b> <br/>notes go here. Shouldce something in the external repository",
     "platform": "linux",
     "repository": {
-      "url": "https://github.com/jstinnett23/pingfederate-helloworld-channel",
-      "stackfile": "docker-compose.yaml"
+      "url": "https://github.com/gmorgan-ping/portainer-templates",
+      "stackfile": "compose/simple-stack/docker-compose.yaml"
     },
     "env": [
       {
