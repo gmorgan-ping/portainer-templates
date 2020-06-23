@@ -8,8 +8,7 @@
     "categories": [
       "Integrated Demos"
     ],
-    "note":  ["Line one \
-              Line Two"],
+    "note":  "Line one ",
     "platform": "linux",
     "repository": {
       "url": "https://github.com/gmorgan-ping/portainer-templates",
