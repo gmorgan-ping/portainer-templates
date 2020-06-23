@@ -15,8 +15,9 @@
     },
     "env": [
       {
-        "SERVER_PROFILE_URL": "https://github.com/jstinnett23/pingfederate-helloworld-channel",
-        "SERVER_PROFILE_PATH": "pingfederate"
+        "name": "PING_IDENTITY_DEVOPS_USER",
+        "label": "Ping DevOps Username",
+        "default": "username@domain.org"
       }
     ]
   }
