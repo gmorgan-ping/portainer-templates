@@ -1,113 +1,53 @@
 [
 
   {
-    "type": 3,
-    "title": "Simple Stack",
-    "description": "Ping Identity Simple Stack integrated demo",
-    "logo": "https://raw.githubusercontent.com/gmorgan-ping/portainer-templates/master/ping-logo.svg",
-    "categories": [
-      "Integrated Demos"
-    ],
-    "note":  "Line one ",
-    "platform": "linux",
-    "repository": {
-      "url": "https://github.com/gmorgan-ping/portainer-templates",
-      "stackfile": "compose/simple-stack/docker-compose.yaml"
-    },
-    "env": [
-      {
-        "name": "MAX_HEAP_SIZE",
-        "label": "Java Max Heap Size (1024m or larger)",
-        "default": "1024m"
+    {
+      "type": 3,
+      "title": "PingDirectory - Getting Started Demo",
+      "description": "Simple demo environment for PingDirectory with PingDataConsole",
+      "logo": "https://raw.githubusercontent.com/gmorgan-ping/portainer-templates/master/ping-logo.svg",
+      "categories": [
+        "PingDirectory"
+      ],
+      "note": "<b>Admin Console: </b><br/>https://hostname:8443/<br/>administrator<br/>2FederateM0re",
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/gmorgan-ping/portainer-templates",
+        "stackfile": "stacks/pingdirectory-getting-started.yaml"
       },
-      {
-        "name": "PING_IDENTITY_DEVOPS_USER",
-        "label": "Ping DevOps Username",
-        "default": "username@domain.org"
-      },
-      {
-        "name": "PING_IDENTITY_DEVOPS_KEY",
-        "label": "Ping DevOps Key",
-        "default": "abcdefgh-abcd-1234-5678-abcdefgh"
-      },
-      {
-        "name": "PING_IDENTITY_ACCEPT_EULA",
-        "label": "Accept Ping Identity EULA?",
-        "description": "Accept the EULA in order to successfully deploy this template",
-        "select": [
-          {
-            "text": "No, I do not accept",
-            "value": "NO",
-            "default": true
-          },
-          {
-            "text": "Yes, I accept",
-            "value": "YES"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "PingFederate - Novacoast",
-    "description": "PingFederate instance - sample for Novacoast",
-    "categories": ["Channel Partner Demos"],
-    "note": "<b>Admin Console Login</b><br>https://hostname:9998/pingfederate/app<br><b>Username: </b>admin<br><b>Password: </b>2FederateMore",
-    "platform": "linux",
-    "logo": "https://raw.githubusercontent.com/gmorgan-ping/portainer-templates/master/novacoast-logo.svg",
-    "image": "pingidentity/pingfederate:edge",
-    "ports": [
-      "9998:9999/tcp",
-      "9030:9031/tcp"
-    ],
-    "env": [
-      {
-        "SERVER_PROFILE_URL": "https://github.com/pingidentity/pingidentity-server-profiles.git",
-        "SERVER_PROFILE_PATH": "getting-started/pingfederate"
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "PingIdentity/OneIdentity DevOps Solution Lab",
-    "description": "Demonstration of Ping Identity and One Identity environment with Workflow Capabilities + SSO",
-    "categories": ["Channel Partner Demos"],
-    "note": "<b>Admin Console Login</b><br>https://hostname:9997/pingfederate/app<br><b>Username: </b>admin<br><b>Password: </b>2FederateMore",
-    "platform": "linux",
-    "logo": "https://raw.githubusercontent.com/gmorgan-ping/portainer-templates/master/oi-logo.png",
-    "image": "pingidentity/pingfederate:edge",
-    "ports": [
-      "9997:9999/tcp",
-      "9029:9031/tcp"
-    ],
-    "env": [
-      {
-        "SERVER_PROFILE_URL": "https://github.com/pingidentity/pingidentity-server-profiles.git",
-        "SERVER_PROFILE_PATH": "getting-started/pingfederate"
-      }
-    ]
-  },
-  {
-    "type": 3,
-    "title": "[TESTING] PingFederate HTTP BIN Sample App",
-    "description": "Login to PingFederate on port 9999",
-    "logo": "https://raw.githubusercontent.com/gmorgan-ping/portainer-templates/master/ping-logo.svg",
-    "categories": [
-      "PingFederate"
-    ],
-    "note": "Additional notes go here. Should reference something in the external repository",
-    "platform": "linux",
-    "repository": {
-      "url": "https://github.com/jstinnett23/pingfederate-helloworld-channel",
-      "stackfile": "docker-compose.yaml"
-    },
-    "env": [
-      {
-        "SERVER_PROFILE_URL": "https://github.com/jstinnett23/pingfederate-helloworld-channel",
-        "SERVER_PROFILE_PATH": "pingfederate"
-      }
-    ]
-  }
+      "env": [
+        {
+          "name": "MAX_HEAP_SIZE",
+          "label": "Java Max Heap Size (1024m or larger)",
+          "default": "1024m"
+        },
+        {
+          "name": "PING_IDENTITY_DEVOPS_USER",
+          "label": "Ping DevOps Username",
+          "default": "username@domain.org"
+        },
+        {
+          "name": "PING_IDENTITY_DEVOPS_KEY",
+          "label": "Ping DevOps Key",
+          "default": "abcdefgh-abcd-1234-5678-abcdefgh"
+        },
+        {
+          "name": "PING_IDENTITY_ACCEPT_EULA",
+          "label": "Accept Ping Identity EULA?",
+          "description": "Accept the EULA in order to successfully deploy this template",
+          "select": [
+            {
+              "text": "No, I do not accept",
+              "value": "NO",
+              "default": true
+            },
+            {
+              "text": "Yes, I accept",
+              "value": "YES"
+            }
+          ]
+        }
+      ]
+    }
 
 ]
