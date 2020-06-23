@@ -7,7 +7,7 @@
     "categories": [
       "PingFederate"
     ],
-    "note": "Additional notes go here. Should reference something in the external repository",
+    "note": "<strong>Additional</strong> notes go here. Should reference something in the external repository",
     "platform": "linux",
     "repository": {
       "url": "https://github.com/jstinnett23/pingfederate-helloworld-channel",
